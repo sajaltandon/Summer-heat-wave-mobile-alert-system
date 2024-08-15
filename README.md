@@ -1,25 +1,39 @@
-# Summer-Heat-Waves-Mobile-Alert-System
-This project aims to predict heat waves using historical weather data. By leveraging machine learning algorithms, we identify potential areas that might experience heat waves, helping authorities issue timely warnings and take necessary precautions.
-* Project Overview
-This repository contains the code and datasets used to develop and evaluate various machine learning models for predicting the next day's maximum temperature (Next_Tmax). The primary focus is on identifying areas where the temperature might exceed 40°C, thus indicating a heat wave.
+Heat Wave Prediction Using Machine Learning
+Project Overview
+This project focuses on forecasting heat waves using past weather data. By applying various machine learning techniques, we aim to pinpoint regions that could experience heat waves, enabling authorities to provide early warnings and take preventive actions to minimize risks.
 
-* Key Features
-Data Cleaning and Preprocessing: Handling missing values and scaling features.
-Exploratory Data Analysis (EDA): Visualizing relationships between features and understanding data distributions.
-Model Comparison: Evaluating different regression models to identify the best performer based on RMSE (Root Mean Squared Error).
-Prediction and Warning System: Predicting temperatures for test data and issuing heat wave warnings for areas with predicted temperatures above 40°C.
-* Datasets
-Train Dataset: Historical weather data used for training the models.
-Test Dataset: Data used for testing the model predictions and issuing heat wave warnings.
-* Models Evaluated
+Key Features
+Data Cleaning and Preparation:
+Addressing missing data points and ensuring proper feature scaling to enhance model performance.
+
+Exploratory Data Analysis (EDA):
+Exploring data through visualizations to uncover relationships between key variables and better understand data patterns.
+
+Model Performance Evaluation:
+Comparing multiple regression models to find the most accurate one, using RMSE (Root Mean Squared Error) as the primary evaluation metric.
+
+Temperature Prediction and Alert System:
+Using the optimal model to forecast temperatures and generate heat wave alerts for locations where the predicted maximum temperature surpasses 40°C.
+Datasets
+
+Training Dataset:
+Historical weather data utilized for model training.
+
+Testing Dataset:
+Data used to assess the accuracy of predictions and to trigger heat wave warnings when necessary.
+Models Evaluated
 Random Forest Regressor
 Gradient Boosting Regressor
 Linear Regression
 Decision Tree Regressor
 Support Vector Regressor (SVR)
 XGBoost Regressor
-CatBoost Regressor (Selected as the best model)
+CatBoost Regressor (Chosen as the top-performing model)
 LightGBM Regressor
+
+Outcome
+After thorough evaluation, the CatBoost Regressor was identified as the most effective model for predicting the next day's maximum temperature and issuing heat wave alerts.
+
 * Installation
 To get started with this project, clone the repository and install the required dependencies:
 
